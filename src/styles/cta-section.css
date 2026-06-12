@@ -1,0 +1,36 @@
+.cta-section {
+  padding: 100px 7%;
+  background: linear-gradient(135deg, #00bcd4, #0077b6);
+  text-align: center;
+  color: white;
+}
+
+.cta-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 14px 35px;
+  background: white;
+  color: #0077b6;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cta-btn:hover {
+  transform: translateY(-3px);
+}

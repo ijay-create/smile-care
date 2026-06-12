@@ -1,0 +1,100 @@
+/* MAIN SECTION */
+.booking-slots {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* HEADER */
+.booking-slots-header h2 {
+  font-size: 1.5rem;
+  color: #0f172a;
+}
+
+.booking-slots-header p {
+  color: #64748b;
+}
+
+/* DOCTOR GRID */
+.doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.doctor-card {
+  padding: 12px;
+  border-radius: 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-3px);
+}
+
+.doctor-card.active {
+  background: #4fd1d9;
+  color: white;
+  border-color: #4fd1d9;
+}
+
+/* FIELDS */
+.booking-controls .field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.booking-controls input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+/* TIME SLOTS */
+.slots-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.slot-btn {
+  padding: 10px;
+  border: 1px solid #e2e8f0;
+  background: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.slot-btn:hover {
+  background: #f1f5f9;
+}
+
+.slot-btn.active {
+  background: #4fd1d9;
+  color: white;
+  border-color: #4fd1d9;
+}
+
+/* SUMMARY */
+.appointment-summary {
+  background: #f8fafc;
+  padding: 15px;
+  border-radius: 12px;
+  border-left: 4px solid #4fd1d9;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .doctor-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .slots-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
